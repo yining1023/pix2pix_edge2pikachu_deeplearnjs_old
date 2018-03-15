@@ -91,6 +91,7 @@ python tools/process.py --input_dir photos/resized --b_dir photos/blank --operat
 
 Here is an example of the combined image: 
 Notice that the size of the combined image is 512x256px. The size is important for training the model successfully.
+
 <a href="https://imgbb.com/"><img src="https://image.ibb.co/kYHVvH/0_batch2.png" alt="0_batch2" border="0" with="300px"></a>
 
 Read more here: [affinelayer](https://github.com/affinelayer)'s [Create your own dataset](https://github.com/affinelayer/pix2pix-tensorflow#creating-your-own-dataset)
@@ -104,21 +105,46 @@ Read more here: [affinelayer](https://github.com/affinelayer)'s [Create your own
 
 I collected 305 images for training and 78 images for testing.
 
+
 ### 2. Train the model
-[https://github.com/affinelayer/pix2pix-tensorflow#getting-started](https://github.com/affinelayer/pix2pix-tensorflow#getting-started)
+```
+# train the model
+python pix2pix.py --mode train --output_dir pikachu_train --max_epochs 200 --input_dir pikachu/train --which_direction BtoA
+```
+Read more here: [https://github.com/affinelayer/pix2pix-tensorflow#getting-started](https://github.com/affinelayer/pix2pix-tensorflow#getting-started)
 
 I used the High Power Computer(HPC) at NYU to train the model. You can see more instruction here: [https://github.com/cvalenzuela/hpc](https://github.com/cvalenzuela/hpc). You can request GPU and submit a job to HPC, and use tunnels to tranfer large files between the HPC and your computer.
 
-The training takes me 4 hours and 16 mins.
+The training takes me 4 hours and 16 mins. After train, there should be a `pikachu_train` folder with `checkpoint` in it.
+
 
 ### 3. Test the model
-[https://github.com/affinelayer/pix2pix-tensorflow#getting-started](https://github.com/affinelayer/pix2pix-tensorflow#getting-started)
+```
+# test the model
+python pix2pix.py --mode test --output_dir pikachu_test --input_dir pikachu/val --checkpoint pikachu_train
+```
+After testing, there should be a new folder called `pikachu_test`. In the folder, if you open the `index.html`, you should be able to see something like this in your browser:
 
+<a href="https://ibb.co/cJiLvH"><img src="https://preview.ibb.co/kkFB2x/Screen_Shot_2018_03_15_at_8_42_48_AM.png" alt="Screen_Shot_2018_03_15_at_8_42_48_AM" border="0" width="400px"></a><br />
+
+Read more here: [https://github.com/affinelayer/pix2pix-tensorflow#getting-started](https://github.com/affinelayer/pix2pix-tensorflow#getting-started)
 
 
 ### 4. Export the model
-
-
+```
+python pix2pix.py --mode export --output_dir /export/ --checkpoint /pikachu_train/ --which_direction BtoA
+```
+It will create a new `export` folder
 
 ### 5. Port the model to deeplearn.js
 I followed [affinelayer](https://github.com/affinelayer)'s instruction here: [https://github.com/affinelayer/pix2pix-tensorflow/tree/master/server#exporting](https://github.com/affinelayer/pix2pix-tensorflow/tree/master/server#exporting)
+
+```
+cd server
+python tools/export-checkpoint.py --checkpoint ../export --output_file static/models/pikachu_BtoA.pict
+```
+We should be able to get a file named `pikachu_BtoA.pict`
+
+
+### 6. Create an interactive interface in the browser
+Copy the model we get from step 5 to the `models` folder.
