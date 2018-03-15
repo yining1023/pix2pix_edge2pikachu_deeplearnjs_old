@@ -16,7 +16,7 @@ function main() {
   }
 
   create_editor({
-    name: "edges2cats",
+    name: "edges2pikachu",
     weights_url: "/models/edges2pikachu_AtoB.pict",
     mode: "line",
     clear: "#FFFFFF",
@@ -25,9 +25,9 @@ function main() {
       eraser: "#ffffff",
     },
     draw: "#000000",
-    initial_input: "/edges2cats-input.png",
-    initial_output: "/edges2cats-output.png",
-    sheet_url: "/edges2cats-sheet.jpg",
+    initial_input: "/edges2pikachu-input.png",
+    initial_output: "/edges2pikachu-output.png",
+    sheet_url: "/edges2pikachu-sheet.png",
   })
 
   window.requestAnimationFrame(frame)
