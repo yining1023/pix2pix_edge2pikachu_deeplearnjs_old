@@ -8,8 +8,10 @@ A new front-end site coming soon! I'm rewriting it here: [https://github.com/yin
 
 Todo list:
 - [ ] Update to deeplearn 0.5
-- [ ] Make the interface with p5.js
+- [ ] Make the drawing interface with p5.js
 - [ ] Make it draw in realtime.
+- [ ] Make the model smaller(54.4 MB now)
+- [ ] Make the model faster(~3000 ms for the first image, and ~1600 ms for other images)
 
 Try it yourself: Download the folder and run it locally:
 ```
@@ -143,7 +145,7 @@ I followed [affinelayer](https://github.com/affinelayer)'s instruction here: [ht
 cd server
 python tools/export-checkpoint.py --checkpoint ../export --output_file static/models/pikachu_BtoA.pict
 ```
-We should be able to get a file named `pikachu_BtoA.pict`
+We should be able to get a file named `pikachu_BtoA.pict`, which is 54.4 MB.
 
 
 ### 6. Create an interactive interface in the browser
