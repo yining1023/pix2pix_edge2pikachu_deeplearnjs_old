@@ -17,7 +17,7 @@ function main() {
 
   create_editor({
     name: "edges2cats",
-    weights_url: "/models/edges2cats_AtoB.pict",
+    weights_url: "/models/edges2pikachu_AtoB.pict",
     mode: "line",
     clear: "#FFFFFF",
     colors: {
