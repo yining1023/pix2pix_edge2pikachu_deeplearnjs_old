@@ -17,7 +17,7 @@ function main() {
 
   create_editor({
     name: "edges2pikachu",
-    weights_url: "/models/edges2pikachu_AtoB.pict",
+    weights_url: "/pix2pix_edge2pikachu_deeplearnjs_old/models/edges2pikachu_AtoB.pict",
     mode: "line",
     clear: "#FFFFFF",
     colors: {
@@ -25,9 +25,9 @@ function main() {
       eraser: "#ffffff",
     },
     draw: "#000000",
-    initial_input: "/edges2pikachu-input.png",
-    initial_output: "/edges2pikachu-output.png",
-    sheet_url: "/edges2pikachu-sheet.png",
+    initial_input: "/pix2pix_edge2pikachu_deeplearnjs_old/edges2pikachu-input.png",
+    initial_output: "/pix2pix_edge2pikachu_deeplearnjs_old/edges2pikachu-output.png",
+    sheet_url: "/pix2pix_edge2pikachu_deeplearnjs_old/edges2pikachu-sheet.png",
   })
 
   window.requestAnimationFrame(frame)
