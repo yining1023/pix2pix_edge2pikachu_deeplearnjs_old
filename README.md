@@ -1,5 +1,5 @@
-# pix2pix edge2cat in deeplearnjs
+# pix2pix edge2Pikachu in deeplearnjs
 
-[Demo](https://yining1023.github.io/pix2pix_edge2cat_deeplearnjs/)
+Download it and run it locally, `$python -m SimpleHTTPServer`
 
 Credits: This project is based on [affinelayer](https://github.com/affinelayer)'s [pix2pix-tensorflow](https://github.com/affinelayer/pix2pix-tensorflow)
