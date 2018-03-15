@@ -2,7 +2,7 @@
 
 Demo: [https://yining1023.github.io/pix2pix_edge2pikachu_deeplearnjs_old](https://yining1023.github.io/pix2pix_edge2pikachu_deeplearnjs_old)
 
-Credits: This project is based on [affinelayer](https://github.com/affinelayer)'s [pix2pix-tensorflow](https://github.com/affinelayer/pix2pix-tensorflow)
+Credits: This project is based on [affinelayer](https://github.com/affinelayer)'s [pix2pix-tensorflow](https://github.com/affinelayer/pix2pix-tensorflow). I want to thank [christopherhesse
 
 A new front-end site coming soon! I'm rewriting it here: [https://github.com/yining1023/pix2pix_edge2pikachu_deeplearnjs](https://github.com/yining1023/pix2pix_edge2pikachu_deeplearnjs).
 
@@ -88,6 +88,11 @@ Here's an example of edge detection: left(original) right(edge detected)
 ```
 python tools/process.py --input_dir photos/resized --b_dir photos/blank --operation combine --output_dir photos/combined
 ```
+
+Here is an example of the combined image: 
+Notice that the size of the combined image is 512x256px. The size is important for training the model successfully.
+<a href="https://imgbb.com/"><img src="https://image.ibb.co/kYHVvH/0_batch2.png" alt="0_batch2" border="0" with="300px"></a>
+
 Read more here: [affinelayer](https://github.com/affinelayer)'s [Create your own dataset](https://github.com/affinelayer/pix2pix-tensorflow#creating-your-own-dataset)
 
 
@@ -97,12 +102,14 @@ python tools/split.py --dir photos/combined
 ```
 Read more here: [affinelayer](https://github.com/affinelayer)'s [Create your own dataset](https://github.com/affinelayer/pix2pix-tensorflow#creating-your-own-dataset)
 
-I collected 305 images
+I collected 305 images for training and 78 images for testing.
 
 ### 2. Train the model
 [https://github.com/affinelayer/pix2pix-tensorflow#getting-started](https://github.com/affinelayer/pix2pix-tensorflow#getting-started)
 
+I used the High Power Computer(HPC) at NYU to train the model. You can see more instruction here: [https://github.com/cvalenzuela/hpc](https://github.com/cvalenzuela/hpc). You can request GPU and submit a job to HPC, and use tunnels to tranfer large files between the HPC and your computer.
 
+The training takes me 4 hours and 16 mins.
 
 ### 3. Test the model
 [https://github.com/affinelayer/pix2pix-tensorflow#getting-started](https://github.com/affinelayer/pix2pix-tensorflow#getting-started)
