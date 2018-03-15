@@ -2,7 +2,7 @@
 
 Demo: [https://yining1023.github.io/pix2pix_edge2pikachu_deeplearnjs_old](https://yining1023.github.io/pix2pix_edge2pikachu_deeplearnjs_old)
 
-Credits: This project is based on [affinelayer](https://github.com/affinelayer)'s [pix2pix-tensorflow](https://github.com/affinelayer/pix2pix-tensorflow). I want to thank [christopherhesse
+Credits: This project is based on [affinelayer](https://github.com/affinelayer)'s [pix2pix-tensorflow](https://github.com/affinelayer/pix2pix-tensorflow). I want to thank [christopherhesse](https://github.com/christopherhesse), [nsthorat](https://github.com/nsthorat), and [dsmilkov](dsmilkov) for their help and suggestions from this Github [issue](https://github.com/PAIR-code/deeplearnjs/issues/239).
 
 A new front-end site coming soon! I'm rewriting it here: [https://github.com/yining1023/pix2pix_edge2pikachu_deeplearnjs](https://github.com/yining1023/pix2pix_edge2pikachu_deeplearnjs).
 
