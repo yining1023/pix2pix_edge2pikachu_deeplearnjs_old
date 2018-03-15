@@ -1,6 +1,8 @@
 # pix2pix edge2Pikachu in deeplearnjs OLD
 
-I rewrote the front end site, please check it out here: [https://github.com/yining1023/pix2pix_edge2pikachu_deeplearnjs](https://github.com/yining1023/pix2pix_edge2pikachu_deeplearnjs)
+Demo: [https://yining1023.github.io/pix2pix_edge2pikachu_deeplearnjs_old](https://yining1023.github.io/pix2pix_edge2pikachu_deeplearnjs_old)
+
+A new front-end site coming soon! I'm rewriting it here: [https://github.com/yining1023/pix2pix_edge2pikachu_deeplearnjs](https://github.com/yining1023/pix2pix_edge2pikachu_deeplearnjs).
 
 Download it and run it locally, `$python -m SimpleHTTPServer`
 
