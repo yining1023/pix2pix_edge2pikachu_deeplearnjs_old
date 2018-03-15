@@ -4,7 +4,7 @@ Demo: [https://yining1023.github.io/pix2pix_edge2pikachu_deeplearnjs_old](https:
 
 Credits: This project is based on [affinelayer](https://github.com/affinelayer)'s [pix2pix-tensorflow](https://github.com/affinelayer/pix2pix-tensorflow)
 
-***A new front-end site coming soon! I'm rewriting it here: [https://github.com/yining1023/pix2pix_edge2pikachu_deeplearnjs](https://github.com/yining1023/pix2pix_edge2pikachu_deeplearnjs).
+A new front-end site coming soon! I'm rewriting it here: [https://github.com/yining1023/pix2pix_edge2pikachu_deeplearnjs](https://github.com/yining1023/pix2pix_edge2pikachu_deeplearnjs).
 
 Todo list:
 - [ ] Update to deeplearn 0.5
@@ -21,8 +21,9 @@ $ python -m SimpleHTTPServer
 - 1. Prepare the data
 - 2. Train the model
 - 3. Test the model
-- 4. Port the model to deeplearn.js
-- 5. Create an interactive inteerface in the browser
+- 4. Export the model
+- 5. Port the model to deeplearn.js
+- 6. Create an interactive interface in the browser
 
 
 
@@ -96,7 +97,7 @@ python tools/split.py --dir photos/combined
 ```
 Read more here: [affinelayer](https://github.com/affinelayer)'s [Create your own dataset](https://github.com/affinelayer/pix2pix-tensorflow#creating-your-own-dataset)
 
-
+I collected 305 images
 
 ### 2. Train the model
 [https://github.com/affinelayer/pix2pix-tensorflow#getting-started](https://github.com/affinelayer/pix2pix-tensorflow#getting-started)
@@ -108,5 +109,9 @@ Read more here: [affinelayer](https://github.com/affinelayer)'s [Create your own
 
 
 
-### 4. Port the model to deeplearn.js
+### 4. Export the model
+
+
+
+### 5. Port the model to deeplearn.js
 I followed [affinelayer](https://github.com/affinelayer)'s instruction here: [https://github.com/affinelayer/pix2pix-tensorflow/tree/master/server#exporting](https://github.com/affinelayer/pix2pix-tensorflow/tree/master/server#exporting)
