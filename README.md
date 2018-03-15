@@ -1,5 +1,7 @@
 # Pix2pix edge2Pikachu in deeplearnjs (OLD)
 
+<a href="https://ibb.co/fpS5vH"><img src="https://preview.ibb.co/dHrXaH/Screen_Shot_2018_03_15_at_8_59_06_AM.png" alt="Screen_Shot_2018_03_15_at_8_59_06_AM" border="0"></a>
+
 Demo: [https://yining1023.github.io/pix2pix_edge2pikachu_deeplearnjs_old](https://yining1023.github.io/pix2pix_edge2pikachu_deeplearnjs_old)
 
 Credits: This project is based on [affinelayer](https://github.com/affinelayer)'s [pix2pix-tensorflow](https://github.com/affinelayer/pix2pix-tensorflow). I want to thank [christopherhesse](https://github.com/christopherhesse), [nsthorat](https://github.com/nsthorat), and [dsmilkov](dsmilkov) for their help and suggestions from this Github [issue](https://github.com/PAIR-code/deeplearnjs/issues/239).
