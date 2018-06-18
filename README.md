@@ -6,11 +6,8 @@ Demo: [https://yining1023.github.io/pix2pix_edge2pikachu_deeplearnjs_old](https:
 
 Credits: This project is based on [affinelayer](https://github.com/affinelayer)'s [pix2pix-tensorflow](https://github.com/affinelayer/pix2pix-tensorflow). I want to thank [christopherhesse](https://github.com/christopherhesse), [nsthorat](https://github.com/nsthorat), and [dsmilkov](dsmilkov) for their help and suggestions from this Github [issue](https://github.com/PAIR-code/deeplearnjs/issues/239).
 
-A new front-end site coming soon! I'm rewriting it here: [https://github.com/yining1023/pix2pix_edge2pikachu_deeplearnjs](https://github.com/yining1023/pix2pix_edge2pikachu_deeplearnjs).
 
 Todo list:
-- [ ] Update to deeplearn 0.5
-- [ ] Make the drawing interface with p5.js
 - [ ] Make it draw in realtime.
 - [ ] Make the model smaller(54.4 MB now)
 - [ ] Make the model faster(~3000 ms for the first image, and ~1600 ms for other images)
